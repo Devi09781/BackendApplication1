@@ -20,13 +20,18 @@
 }
 .row {
     display: flex;
-    /* justify-content: space-around; */
+     justify-content: space-around; 
     flex-wrap: wrap;
 }
 .box{
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
     border:1px solid gray;
-    border-radius: 5px;
+    border-radius: 10px;
+    width : 300px ;
     
+}
+.product-image {
+    width: 100px;
+    height: 100px;
 }
