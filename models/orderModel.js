@@ -1,12 +1,10 @@
-import mongoose from mongoose;
-
+import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema({
-  userId: { type: String, required: true },
-  products: [
-    {
-      productId: { type: String, required: true },
-      quantity: { type: Number, required: true }
-    }
-  ]
+  email: { type: String, required: true },
+  orderValue: { type: Number, required: true },
+  items: [{ type: Object }],
+  orderDate: { type: Number },
 });
+const orderModel = mongoose.model("orders", orderSchema);
+export default orderModel;
